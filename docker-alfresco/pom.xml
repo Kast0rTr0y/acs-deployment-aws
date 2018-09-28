@@ -10,7 +10,7 @@
         <image.name>alfresco/${artifactId}</image.name>
         <image.registry>quay.io</image.registry>
         <alfresco.s3.version>2.2.1</alfresco.s3.version>
-        <fabric8.version>3.5.37</fabric8.version>
+        <dependency.fabric8.version>3.5.37</dependency.fabric8.version>
         <dependency.mariadb.version>2.2.6</dependency.mariadb.version>
     </properties>
 
@@ -68,7 +68,7 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>fabric8-maven-plugin</artifactId>
-                <version>${fabric8.version}</version>
+                <version>${dependency.fabric8.version}</version>
                 <configuration>
                     <images>
                         <image>
