@@ -136,10 +136,10 @@ kubectl create -f secret.yaml
       --set s3connector.config.bucketLocation="$S3BUCKET_LOCATION" \
       --set s3connector.secrets.encryption=kms \
       --set s3connector.secrets.awsKmsKeyId="$S3BUCKET_KMS_ALIAS" \
-      --set repository.image.repository="alfresco/alfresco-content-repository-aws" \
-      --set repository.image.tag="0.1.3-repo-6.0.0.3" \
+      --set repository.image.repository="quay.io/alfresco/alfresco-content-repository-aws" \
+      --set repository.image.tag="fix-MNT-19986_on_7_11-6.1.0-SNAPSHOT" \
       --set registryPullSecrets=quay-registry-secret \
-      --set repository.replicaCount=1 \
+      --set repository.replicaCount=3 \
       --namespace=$DESIREDNAMESPACE
   fi
 
