@@ -139,7 +139,7 @@ kubectl create -f secret.yaml
       --set repository.image.repository="quay.io/alfresco/alfresco-content-repository-aws" \
       --set repository.image.tag="fix-MNT-19986_on_7_11-6.1.0-SNAPSHOT" \
       --set registryPullSecrets=quay-registry-secret \
-      --set repository.replicaCount=3 \
+      --set repository.replicaCount=4 \
       --namespace=$DESIREDNAMESPACE
   fi
 
