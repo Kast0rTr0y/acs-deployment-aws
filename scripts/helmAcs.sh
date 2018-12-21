@@ -163,7 +163,7 @@ repository:
   adminPassword: \"$ALFRESCO_PASSWORD\"
   image:
     repository: \"quay.io/alfresco/alfresco-content-repository-aws\"
-    tag: \"feature-repo-4002_upgrade_mariadb_driver-6.2.0-SNAPSHOT\"
+    tag: \"feature-REPO-4002_upgrade_mariadb_2.2.5-6.2.0-SNAPSHOT\"
   replicaCount: $REPO_PODS
   environment:
     JAVA_OPTS: \" -Dopencmis.server.override=true -Dopencmis.server.value=https://$EXTERNAL_NAME -Dalfresco.restApi.basicAuthScheme=true -Dsolr.base.url=/solr -Dsolr.secureComms=none -Dindex.subsystem.name=solr6 -Dalfresco.cluster.enabled=true -Ddeployment.method=HELM_CHART -Xms2000M -Xmx2000M\"
